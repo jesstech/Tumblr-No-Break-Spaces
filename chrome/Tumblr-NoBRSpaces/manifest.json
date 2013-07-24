@@ -1,0 +1,14 @@
+{
+   "name": "Tumblr No-Break Spaces",
+   "version": "1.1",
+   "manifest_version": 2,
+   "description": "Converts all double-spaces to non-breaking spaces to prevent indenting new lines.",
+   "update_url": "https://github.com/jesstech/Tumblr-NoBRSpaces/raw/master/chrome/update-manifest.xml",
+   "content_scripts": [
+    {
+      "matches": ["*://*.tumblr.com/*"],
+      "all_frames": true,
+      "js": ["nobrspaces.js"]
+    }
+   ]
+}
